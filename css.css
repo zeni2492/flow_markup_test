@@ -1,0 +1,599 @@
+
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/gilroy');
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Neuzeit-Grotesk",sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/neuzeit-grotesk');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 390px;
+
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+    /*информация о скидке*/
+.sales {
+    width: 390px;
+    height: 37px;
+    font-weight: 600;
+    font-size: 14px;
+    background: linear-gradient(rgba(105, 177, 201, 1), rgba(96, 129, 195, 1), rgba(85, 88, 175, 1));
+    color: white;
+    font-family: 'Gilroy',sans-serif;
+    font-weight: 600;
+    /* Цвет текста */
+    display: flex;
+    justify-content: center;
+    /* Выравнивание текста по центру */
+    line-height: 37px;
+    /* Выравнивание текста по вертикали по центру */
+}
+
+.Navigation-bar {
+    width: 390px;
+    height: 48px;
+    background-color: rgb(11, 11, 11, 1);
+}
+
+.container {
+    margin-left: 12px;
+    margin-top: 16px;
+    width: 390px;
+    align-items: center;
+    display: inline-flex;
+    position: relative;
+
+}
+
+.menu {
+    margin-right: 24px;
+    padding-left: 30px;
+    width: 282px;
+    height: 16px;
+    font-size: 12px;
+    font-family: 'Gilroy',sans-serif;
+    font-weight: 400;
+    color: #FFFFFFB2;
+    display: inline-flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 51px;
+}
+
+.main-div{
+    width: 390px;
+    height: 483px;
+    background-image: linear-gradient(rgba(11, 11, 11, 1), #232323);
+    margin-top: -1px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+
+
+.text {
+    padding-top: 40px;
+    padding-left: 15px;
+    text-wrap: nowrap;
+    font-family: 'Gilroy',sans-serif;
+}
+
+.title {
+    width: 370px;
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 4px;
+    font-family: "Neuzeit-Grotesk",sans-serif;
+
+
+}
+
+.subtitle {
+    width: 170px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Gilroy',sans-serif;
+
+}
+
+.content {
+    width: 390px;
+    height: 343px;
+    background: url(Utils/studiobudsplus-pdp-p04-hevc.mp4.rendition\ 1.png) no-repeat;
+}
+    /* скидка */
+.discount-table {
+    width: 113px;
+    height: 52px;
+    display: flex;
+    padding : 2px, 12px, 2px, 12px;
+    border: 1px solid;
+    /* border-color: linear-gradient( rgba(255, 255, 255, 0.35) 5.35%, rgba(255, 255, 255, 0.23) 91.84%); */
+    border-radius: 30px;
+    word-spacing: 10px;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-position: 0px 0px,0px 0px;
+    background-image: linear-gradient(108deg, rgba(11,11,11,1) 85%, #333)
+}
+
+
+
+.price {
+    font-family: "Neuzeit-Grotesk",sans-serif;
+    font-size: 18px;
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 5px;
+}
+
+.new-price {
+    font-family: "Neuzeit-Grotesk",sans-serif;
+    margin-left: 5px;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+ /* Карточки */
+.cards{
+    font-family: 'Gilroy',sans-serif;
+    font-weight: 400;
+    width: 370px;
+    height: 118px;
+    display: inline-flex;
+    margin: 10px 10px 10px 10px;
+    justify-content: space-between;
+}
+
+.card1, .card2, .card3 {
+    width: 120px; /* Ширина карточки */
+    height: 118px; /* Высота карточки */
+    border-radius: 30px; /* Радиус границ карточки */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Граница карточки */
+    font-size: 12px;
+    line-height: 15.6px;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background-image: linear-gradient(#323232,#232323);
+  }
+
+.battery-img, .sound-img, .micro-img {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#battery, #micro, #sound{
+    width: 40px;
+    height: 40px;
+}
+
+.sound-text, .battery-text {
+    padding:10px 4px 10px 4px;
+    margin: 0;
+    width: 112px;
+    height: 48px;
+    text-align: center;
+    line-height: 15.6px;
+}
+
+.micro-text{
+    padding:26px 4px 10px 4px;
+    margin: 0;
+    width: 112px;
+    height: 48px;
+    text-align: center;
+    line-height: 15.6px;
+}
+
+.reviews{
+    color: #0B0B0B;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 24px;
+    width: 370px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Слайдер */
+.slider-selector{
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pods-img{
+    width: 116px;
+    height: 116px;
+}
+
+.pods-container {
+    margin-top: 8px;
+    width: 370px;
+}
+.pods-selector{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Кнопки покупки */
+
+.offer-menu{
+    margin-top: 24px;
+    padding-left: 10px;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+.pods-title{
+    width: 370px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #282828;
+    margin-bottom:0;
+}
+
+.pods-text {
+    padding-left: 2px;
+    margin-top: -10px;
+    font-family: 'Gilroy',sans-serif;
+    width: 170px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #282828CC;
+    white-space: nowrap;
+}
+
+.pods-price{
+    margin-top: 12px;
+    width: 188px;
+    height: 48px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Neuzeit-Grotesk",sans-serif;
+
+}
+
+.price1{
+    text-decoration: line-through;
+    color: rgba(40, 40, 40, 0.8);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.price2{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(40, 40, 40,1);
+}
+
+.discount{
+    width: 93px;
+    height: 32px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 500;
+    border-radius: 40px;
+    padding:4px 10px 4px 10px;
+    text-wrap: nowrap;
+    background: linear-gradient(rgba(105, 177, 201, 1), rgba(96, 129, 195, 1), rgba(85, 88, 175, 1));
+}
+
+/* Кнопки цвета */
+
+.colors{
+    margin-top: 12px;
+}
+
+.color-title{
+    display: flex;
+    justify-content: start;
+    text-transform: uppercase;
+    width: 370px;
+    color: rgba(40, 40, 40, 1);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.color{
+    width: 172px;
+    display: flex;
+    background: none;
+    margin-bottom: 8px;
+}
+.color1{
+    margin-top: -10px;
+    margin-left: -33%;
+    position: relative;
+}
+
+
+
+/* Кнопка покупки*/
+
+.buy-Button{
+    margin-top: 12px;
+    width: 390px;
+    height: 55px;
+}
+
+.buy-button{
+    font-family: "Neuzeit-Grotesk",sans-serif;
+    outline: none;
+    width: 370px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background: rgba(40, 40, 40, 1);
+    border-radius: 40px;
+    align-items: center;
+    color:white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.timer{
+    font-family: "Neuzeit-Grotesk",sans-serif;
+
+    margin-top: 15px;
+    width: 370px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.motivation{
+    margin-left: 8px;
+    font-family: "Gilroy",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(246, 93, 129, 1);
+    margin-left: 20px;
+}
+
+.time{
+    font-family: "Neuzeit-Grotesk",sans-serif;
+    color:  rgba(246, 93, 129, 1);
+    white-space: nowrap;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* method payment*/
+
+.payments{
+    margin-top: 12px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay{
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(247, 247, 247, 1);
+    text-align: center;
+}
+
+.visa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 5px, 10px, 5px, 10px
+}
+
+/* Info */
+
+.info-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-about-product{
+    width: 370px;
+    height: 428px;
+    background: #F7F7F7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-frame1{
+    padding: 15px 15px 0px 15px;
+}
+
+.line{
+    margin-top: 16px;
+    width: 340px;
+    border: 1px solid #DCDCDC
+}
+
+.info-frame2{
+    margin-top: 16px;
+    padding: 0px 15px 15px 15px;
+}
+
+/* информация по покупкам */
+
+.about-your-safety{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.shipping{
+    font-family: "Gilroy",sans-serif;
+    width: 370px;
+    height: 152px;
+    border: 1px solid #626262;
+    border-radius: 30px;
+}
+
+.shipping-header{
+    font-family: "Neuzeit-Grotesk",sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 15px 15px 0px 15px;
+    color: #282828;
+}
+
+.shipping-text{
+    font-size: 14px;
+    width: 340px;
+    height: 36px;
+    padding: 15px 15px 15px 15px;
+    color: #282828CC;
+
+}
+
+
+.guarantee{
+    margin-top: 8px;
+    width: 370px;
+    height: 116px;
+    border: 1px solid #626262;
+    border-radius: 30px;
+    position: relative;
+}
+
+.guarantee-header{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 340px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 15px 15px 0px 15px;
+    color: #282828;
+}
+
+.guarantee-text{
+    font-family: "Gilroy",sans-serif;
+    font-size: 14px;
+    width: 340px;
+    height: 36px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 0px 15px 15px 15px;
+}
+
+.guarantee-text{
+    position: relative;
+}
+
+.warranty{
+    text-transform: uppercase;
+    margin-top: 8px;
+    width: 370px;
+    height: 60px;
+    border: 1px solid #626262;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.warranty-header{
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 15px 15px 0px 15px;
+    color: #282828;
+}
+
+.warranty-text{
+    margin-left: 10px;
+}
+
+.feed-back{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+/* Стили для контейнера слайдера */
+.main-slider{
+    margin-top: 16px;
+}
+
+
+.slider-wrapper{
+    width: 390px;
+    height: 266px;
+    background: #F7F7F7;
+    margin-top: 16px;
+    border-radius: 30px;
+}
+
+.empty-div{
+    width: 390px;
+    height: 70px;
+}
+
+
+/* Стили для широкого экрана */
+
+@media (min-width: 768px) {
+    .body{
+        min-width: 390px;
+    }
+}
+
+/* Стили для узкого экрана */
+@media (max-width: 767px) {
+    .sales, .Navigation-bar, .container, .main-div, .text, .title, .subtitle {
+        max-width: 100%; /* Изменяем ширину на 100% для адаптивности */
+    }
+}
+@media (max-width: 768px) {
+    .info-container{
+        min-width: 370px;
+        margin-left: 10px;
+    }
+    .about-your-safety {
+        min-width: 370px;
+        margin-left: 10px;
+
+    }
+    header, .sales{
+        min-width: 390px;
+    }
+}
